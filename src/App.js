@@ -11,6 +11,7 @@ import Notices from './pages/Notices';
 import Footer from './components/Footer';
 import ContactUs from './pages/ContactUs';
 import Gallery from './pages/Gallery';
+import Login from './auth/Login';
 
 function App() {
 
@@ -65,7 +66,8 @@ function App() {
             <Route exact path="/notices" component={Notices} />
             <Route exact path="/notes" component={Notes} />
             <Route exact path="/gallery" component={Gallery} />
-            <Route exact path="/contactus" component={ContactUs} />            
+            <Route exact path="/contactus" component={ContactUs} />
+            <Route exact path="/login" component={Login} />
             <Redirect to="/" />
           </Switch>
           <Footer />

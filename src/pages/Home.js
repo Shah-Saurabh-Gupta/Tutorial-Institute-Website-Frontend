@@ -17,8 +17,8 @@ function Home() {
       </h1>
                         <p className="mb-8 leading-relaxed">Copper mug try-hard pitchfork pour-over freegan heirloom neutra air plant cold-pressed tacos poke beard tote bag. Heirloom echo park mlkshk tote bag selvage hot chicken authentic tumeric truffaut hexagon try-hard chambray.</p>
                         <div className="flex justify-center">
-                            <button onClick={gallery} className="inline-flex text-white bg-gray-500 border-0 py-2 px-6 focus:outline-none hover:bg-blue-600 rounded text-lg">Gallery</button>
-                            <button onClick={contactus} className="ml-4 inline-flex text-white bg-gray-500 border-0 py-2 px-6 focus:outline-none hover:bg-blue-600 rounded text-lg">Contact Us</button>
+                            <button onClick={gallery} className="inline-flex text-white bg-blue-500 border-0 py-2 px-6 focus:outline-none hover:bg-blue-600 rounded text-lg">Gallery</button>
+                            <button onClick={contactus} className="ml-4 inline-flex text-white bg-blue-500 border-0 py-2 px-6 focus:outline-none hover:bg-blue-600 rounded text-lg">Contact Us</button>
                         </div>
                     </div>
                     <div className="lg:max-w-lg lg:w-full md:w-1/2 w-5/6">
