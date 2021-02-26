@@ -12,6 +12,10 @@ import Footer from './components/Footer';
 import ContactUs from './pages/ContactUs';
 import Gallery from './pages/Gallery';
 import Login from './auth/Login';
+import AdminRoute from './auth/AdminRoute';
+import StudentRoute from './auth/StudentRoute';
+import Adminpanel from './pages/Adminpanel';
+import Studentpanel from './pages/Studentpanel';
 
 function App() {
 
@@ -39,16 +43,19 @@ function App() {
 
 
       if (tokenRes.data) {
-        const userRes = await axios.get("http://localhost:5000/user/", {
-          headers: { "x-auth-token": token },
-        });
+        const userId = tokenRes.data.userId;
+        //console.log(userId);
+        const userRes = await axios.get(`http://localhost:5000/user/${userId}`);
+        // , {
+        //   headers: { "x-auth-token": token },
+        // });
         //console.log(userRes.data.user.role);
         setUserData({
           token,
-          role: userRes.data.user.role,
+          role,
           user: userRes.data,
         });
-
+        // : userRes.data.user.role
       }
     };
 
@@ -68,6 +75,8 @@ function App() {
             <Route exact path="/gallery" component={Gallery} />
             <Route exact path="/contactus" component={ContactUs} />
             <Route exact path="/login" component={Login} />
+            <AdminRoute exact path="/admin" component={Adminpanel} isAuthenticated={userData.role} />
+            <StudentRoute exact path="/student" component={Studentpanel} isAuthenticated={userData.role} />
             <Redirect to="/" />
           </Switch>
           <Footer />

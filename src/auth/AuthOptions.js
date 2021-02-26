@@ -28,27 +28,15 @@ function AuthOptions() {
                 <>
                     {(userData.role === 'admin') ?
                         (<>
-                            <div onClick={admin}><button className="inline-flex items-center text-white bg-blue-500 border-0 py-1 px-3 focus:outline-none hover:bg-blue-600 rounded text-base mt-4 md:mt-0">Admin
-      <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" className="w-4 h-4 ml-1" viewBox="0 0 24 24">
-                                    <path d="M5 12h14M12 5l7 7-7 7"></path>
-                                </svg>
+                            <div onClick={admin}><button className="inline-flex items-center text-white bg-blue-500 border-0 py-1 px-3 focus:outline-none hover:bg-blue-600 rounded text-base mr-4 mt-4 md:mt-0">Admin
                             </button></div>
                             <div onClick={logout}><button className="inline-flex items-center text-white bg-blue-500 border-0 py-1 px-3 focus:outline-none hover:bg-blue-600 rounded text-base mt-4 md:mt-0">Logout
-      <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" className="w-4 h-4 ml-1" viewBox="0 0 24 24">
-                                    <path d="M5 12h14M12 5l7 7-7 7"></path>
-                                </svg>
                             </button></div>
                         </>) :
                         (<>
-                            <div onClick={student}><button className="inline-flex items-center text-white bg-blue-500 border-0 py-1 px-3 focus:outline-none hover:bg-blue-600 rounded text-base mt-4 md:mt-0">Student
-      <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" className="w-4 h-4 ml-1" viewBox="0 0 24 24">
-                                    <path d="M5 12h14M12 5l7 7-7 7"></path>
-                                </svg>
+                            <div onClick={student}><button className="inline-flex items-center text-white bg-blue-500 border-0 py-1 px-3 focus:outline-none hover:bg-blue-600 rounded text-base mr-4 mt-4 md:mt-0">Student
                             </button></div>
                             <div onClick={logout}><button className="inline-flex items-center text-white bg-blue-500 border-0 py-1 px-3 focus:outline-none hover:bg-blue-600 rounded text-base mt-4 md:mt-0">Logout
-      <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" className="w-4 h-4 ml-1" viewBox="0 0 24 24">
-                                    <path d="M5 12h14M12 5l7 7-7 7"></path>
-                                </svg>
                             </button></div>
                         </>)}
                 </>

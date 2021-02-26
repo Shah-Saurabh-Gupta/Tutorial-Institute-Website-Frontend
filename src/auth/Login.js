@@ -26,7 +26,7 @@ function Login() {
         user: loginRes.data.user,
       });
       localStorage.setItem("auth-token", loginRes.data.token);
-      localStorage.setItem("role", loginRes.data.user.role);
+      localStorage.setItem("role", loginRes.data.role);
       const role = localStorage.getItem("role");
       if (role === 'admin') {
         history.push("/admin");

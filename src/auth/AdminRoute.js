@@ -1,7 +1,7 @@
 import React from 'react';
 import { Route, Redirect } from 'react-router-dom';
 
-const AdminRoute = ({ component: Component, JWTAuthenticated, isAuthenticated, ...rest }) => (
+const AdminRoute = ({ component: Component, isAuthenticated, ...rest }) => (
     <Route {...rest} render={props => (
         (isAuthenticated === 'admin')
             ?
