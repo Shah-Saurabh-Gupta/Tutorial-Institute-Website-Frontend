@@ -28,15 +28,15 @@ function AuthOptions() {
                 <>
                     {(userData.role === 'admin') ?
                         (<>
-                            <div onClick={admin}><button className="inline-flex items-center text-white bg-blue-500 border-0 py-1 px-3 focus:outline-none hover:bg-blue-600 rounded text-base mr-4 mt-4 md:mt-0">Admin
+                            <div onClick={admin}><button className="inline-flex items-center text-white bg-blue-500 border-0 py-1 px-3 focus:outline-none hover:bg-blue-600 rounded text-base mr-2 mt-4 md:mt-0">Admin
                             </button></div>
-                            <div onClick={logout}><button className="inline-flex items-center text-white bg-blue-500 border-0 py-1 px-3 focus:outline-none hover:bg-blue-600 rounded text-base mt-4 md:mt-0">Logout
+                            <div onClick={logout}><button className="inline-flex items-center text-white bg-blue-500 border-0 py-1 px-3 focus:outline-none hover:bg-blue-600 rounded text-base ml-2 mt-4 md:mt-0">Logout
                             </button></div>
                         </>) :
                         (<>
-                            <div onClick={student}><button className="inline-flex items-center text-white bg-blue-500 border-0 py-1 px-3 focus:outline-none hover:bg-blue-600 rounded text-base mr-4 mt-4 md:mt-0">Student
+                            <div onClick={student}><button className="inline-flex items-center text-white bg-blue-500 border-0 py-1 px-3 focus:outline-none hover:bg-blue-600 rounded text-base mr-2 mt-4 md:mt-0">Student
                             </button></div>
-                            <div onClick={logout}><button className="inline-flex items-center text-white bg-blue-500 border-0 py-1 px-3 focus:outline-none hover:bg-blue-600 rounded text-base mt-4 md:mt-0">Logout
+                            <div onClick={logout}><button className="inline-flex items-center text-white bg-blue-500 border-0 py-1 px-3 focus:outline-none hover:bg-blue-600 rounded text-base ml-2 mt-4 md:mt-0">Logout
                             </button></div>
                         </>)}
                 </>

@@ -5,7 +5,7 @@ function Footer() {
     return (
         <>
             <footer className="text-gray-600 body-font">
-                <div className="container px-5 py-8 mx-auto flex items-center sm:flex-row flex-col">
+                <div className="container px-5 py-2 mx-auto flex items-center sm:flex-row flex-col">
                   <span className="inline-flex sm:ml-auto sm:mt-0 mt-4 justify-center sm:justify-start">
                         <Link className="text-gray-500">
                             <svg fill="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" className="w-5 h-5" viewBox="0 0 24 24">

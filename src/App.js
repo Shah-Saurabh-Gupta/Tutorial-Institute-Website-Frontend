@@ -16,6 +16,11 @@ import AdminRoute from './auth/AdminRoute';
 import StudentRoute from './auth/StudentRoute';
 import Adminpanel from './pages/Adminpanel';
 import Studentpanel from './pages/Studentpanel';
+import EditStudent from './components/EditStudent';
+import ViewStudent from './components/ViewStudent';
+import AddStudent from './components/AddStudent';
+import AddNotice from './components/AddNotice';
+import AddFile from './components/AddFile';
 
 function App() {
 
@@ -76,6 +81,11 @@ function App() {
             <Route exact path="/contactus" component={ContactUs} />
             <Route exact path="/login" component={Login} />
             <AdminRoute exact path="/admin" component={Adminpanel} isAuthenticated={userData.role} />
+            <AdminRoute exact path="/admin/viewStudent/:id" component={ViewStudent} isAuthenticated={userData.role} />
+            <AdminRoute exact path="/admin/editStudent/:id" component={EditStudent} isAuthenticated={userData.role} />
+            <AdminRoute exact path="/admin/addStudent" component={AddStudent} isAuthenticated={userData.role} />
+            <AdminRoute exact path="/admin/addNotice" component={AddNotice} isAuthenticated={userData.role} />
+            <AdminRoute exact path="/admin/addFile" component={AddFile} isAuthenticated={userData.role} />
             <StudentRoute exact path="/student" component={Studentpanel} isAuthenticated={userData.role} />
             <Redirect to="/" />
           </Switch>

@@ -1,8 +1,9 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import emailjs from "emailjs-com";
 
 function ContactUs() {
+    const [message, setMessage] = useState('');
     const styles = {
         filter: 'grayscale(0.4)',
         contrast: '(1.2)',
@@ -19,6 +20,7 @@ function ContactUs() {
                 console.log(error.text);
             });
         e.target.reset()
+        setMessage('Your message has been sent');
     }
 
     return (
@@ -62,6 +64,7 @@ function ContactUs() {
                             </div>
                             <button type="submit" className="text-white bg-blue-500 border-0 py-2 px-6 focus:outline-none hover:bg-blue-600 rounded text-lg">Send</button>
                         </form>
+                        <p className="text-blue-500 text-m mt-1 font-medium">{message}</p>
                         <p className="text-xs text-gray-500 mt-3">Chicharrones blog helvetica normcore iceland tousled brook viral artisan.</p>
                     </div>
                 </div>
