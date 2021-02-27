@@ -1,10 +1,15 @@
 import React from 'react'
+import AdminNotices from '../components/AdminNotices'
+import AdminResources from '../components/AdminResources'
+import AdminStudentReg from '../components/AdminStudentReg'
 
 function Adminpanel() {
     return (
-        <div>
-            <h1>Hi admin!</h1>
-        </div>
+        <>
+            <div><AdminStudentReg /></div>
+            <div><AdminNotices /></div>
+            <div><AdminResources /></div>
+        </>
     )
 }
 
