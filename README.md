@@ -9,6 +9,12 @@
 
 ![Tutorial Institute website frontend_loginPage](https://user-images.githubusercontent.com/68224553/109415095-b61c3500-79dc-11eb-87ee-868bc05a3a2f.PNG)
 
+![Tutorial Institute website frontend_adminPage](https://user-images.githubusercontent.com/68224553/109415137-e8c62d80-79dc-11eb-86dc-34ef6f2888d5.PNG)
+
+![Tutorial Institute website frontend_freenotesPage](https://user-images.githubusercontent.com/68224553/109415139-ef54a500-79dc-11eb-8cac-3cae7c021f75.PNG)
+
+![Tutorial Institute website frontend_contactusPage](https://user-images.githubusercontent.com/68224553/109415143-f2e82c00-79dc-11eb-922e-cf54c2bb3b3e.PNG)
+
 
 
 
