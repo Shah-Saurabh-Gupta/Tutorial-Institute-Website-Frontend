@@ -49,6 +49,7 @@ const AddStudent = () => {
                                 <option value="Morning" >Morning</option>
                                 <option value="Noon" >Noon</option>
                                 <option value="Evening" >Evening</option>
+                                <option value="Free" >Free</option>
                             </select>
                             {/* <input type="text" id="batch" name="batch" value={batch} onChange={e => onInputChange(e)} class="rounded-sm px-4 py-3 mt-3 focus:outline-none bg-gray-100 w-full" placeholder="Batch" /> */}
                         </div>

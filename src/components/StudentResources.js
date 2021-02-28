@@ -8,20 +8,25 @@ function StudentResources() {
 
     const { userData } = useContext(UserContext);
     const [users, setUser] = useState([]);
+    
      
     useEffect(() => {
         loadUsers();
-        console.log(userData);
+        //console.log(userData);
     }, []);
 
     const loadUsers = async () => {
-        if (userData.user) {
+        if (userData.user.batch) {
             let result = await axios.get(`http://localhost:5000/files/${userData.user.batch}`);
             setUser(result.data.reverse());
+            // console.log(userData.user);
+            // console.log(userData.user.batch);
         }
-        else {
+        else if (userData.user.batch === undefined) {
             let result = await axios.get(`http://localhost:5000/files/${userData.user.user.batch}`);
             setUser(result.data.reverse());
+            //console.log(userData.user);
+            //console.log(userData.user.user.batch);
         }
         // setUser(result.data.reverse());
         // console.log(props.batch);

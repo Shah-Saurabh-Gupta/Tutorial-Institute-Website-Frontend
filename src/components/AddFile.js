@@ -5,7 +5,7 @@ function AddFile() {
 
     const [fileData, setFileData] = useState();
     const [filename, setFileName] = useState("");
-    const [batch, setBatch] = useState("");
+    const [batch, setBatch] = useState("Free");
     const [fileInfo, setFileInfo] = useState("");
     const [message, setMessage] = useState("");
     const [uploadPercentage, setUploadPercentage] = useState(0);
@@ -27,7 +27,7 @@ function AddFile() {
         formData.append("fileInfo", fileInfo);
         formData.append("file", fileData);
         console.log(formData);
-
+        console.log(batch);
         await axios.post("http://localhost:5000/files", formData,
             {
                 onUploadProgress: ProgressEvent => {
