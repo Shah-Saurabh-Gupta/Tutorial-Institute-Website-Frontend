@@ -1,6 +1,14 @@
 ## How to view the Live Project
 
-Open the Wiki Tab of this repository. In that section all the information about the project along with the Project Url link. You can read about the functions and modules from there. Also you can visit the Project Url link to see the live demo of it.
+Open the Wiki Tab of this repository. In that section all the information about the project along with the Project Url link is given. You can read about the functions and modules from there. Also you can visit the Project Url link to see the live demo of it.
+
+## How to run the project locally on your machine
+
+Backend code of this project is delibrately hidden, but still you can run the frontend part of the code on you machine while it is connected with backend hosted on heroku. You need to follow these steps.
+1. Download the zip code from the repository.
+2. Open command line and type cd frontend.
+3. Then type npm run install.
+4. Then type npm start.
 
 ## Screenshot of Backend
 
