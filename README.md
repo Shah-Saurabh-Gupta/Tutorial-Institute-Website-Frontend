@@ -1,6 +1,6 @@
 ## How to view the Live Project
 
-Open the Wiki Tab of this repository. In that section all the information about the project along with the Project Url link is given. You can read about the functions and modules from there. Also you can visit the Project Url link to see the live demo of it.
+Open the Wiki Tab of this repository. In that section all the information about the project along with the Project Url link is given. You can read about the functions and modules from there. Also you can visit the Project Url link to see the live demo of it. Contact me for the credentials to login.
 
 ## How to run the project locally on your machine
 
