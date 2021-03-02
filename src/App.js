@@ -41,7 +41,7 @@ function App() {
         role = "";
       }
       const tokenRes = await axios.post(
-        "http://localhost:5000/user/tokenIsValid",
+        "https://tutorial-website-backend.herokuapp.com/user/tokenIsValid",
         null,
         { headers: { "x-auth-token": token } }
       );
@@ -50,7 +50,7 @@ function App() {
       if (tokenRes.data) {
         const userId = tokenRes.data.userId;
         //console.log(userId);
-        const userRes = await axios.get(`http://localhost:5000/user/${userId}`);
+        const userRes = await axios.get(`https://tutorial-website-backend.herokuapp.com/user/${userId}`);
         // , {
         //   headers: { "x-auth-token": token },
         // });

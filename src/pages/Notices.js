@@ -8,7 +8,7 @@ function Notices() {
     const [rooms, setRooms] = useState([]);
     useEffect(() => {
         (async () => {
-            await axios.get("http://localhost:5000/notice/").then((res) => {
+            await axios.get("https://tutorial-website-backend.herokuapp.com/notice/").then((res) => {
                 setRooms(res.data.reverse());
                 // console.log(res.data);
             });

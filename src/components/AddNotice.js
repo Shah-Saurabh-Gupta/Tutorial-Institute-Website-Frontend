@@ -17,7 +17,7 @@ const AddNotice = () => {
 
   const onSubmit = async e => {
     e.preventDefault();
-    await axios.post("http://localhost:5000/notice/", user);
+    await axios.post("https://tutorial-website-backend.herokuapp.com/notice/", user);
     history.push("/admin");
   };
     return (

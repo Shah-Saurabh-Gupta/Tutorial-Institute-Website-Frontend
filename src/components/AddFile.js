@@ -28,7 +28,7 @@ function AddFile() {
         formData.append("file", fileData);
         console.log(formData);
         console.log(batch);
-        await axios.post("http://localhost:5000/files", formData,
+        await axios.post("https://tutorial-website-backend.herokuapp.com/files", formData,
             {
                 onUploadProgress: ProgressEvent => {
                     setUploadPercentage(parseInt(Math.round((ProgressEvent.loaded * 100) /

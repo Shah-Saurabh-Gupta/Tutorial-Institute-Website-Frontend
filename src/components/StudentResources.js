@@ -17,13 +17,13 @@ function StudentResources() {
 
     const loadUsers = async () => {
         if (userData.user.batch) {
-            let result = await axios.get(`http://localhost:5000/files/${userData.user.batch}`);
+            let result = await axios.get(`https://tutorial-website-backend.herokuapp.com/files/${userData.user.batch}`);
             setUser(result.data.reverse());
             // console.log(userData.user);
             // console.log(userData.user.batch);
         }
         else if (userData.user.batch === undefined) {
-            let result = await axios.get(`http://localhost:5000/files/${userData.user.user.batch}`);
+            let result = await axios.get(`https://tutorial-website-backend.herokuapp.com/files/${userData.user.user.batch}`);
             setUser(result.data.reverse());
             //console.log(userData.user);
             //console.log(userData.user.user.batch);

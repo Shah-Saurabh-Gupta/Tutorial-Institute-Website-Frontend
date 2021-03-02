@@ -11,11 +11,11 @@ function AdminNotices() {
     }, []);
 
     const loadUsers = async () => {
-        const result = await axios.get("http://localhost:5000/notice/");
+        const result = await axios.get("https://tutorial-website-backend.herokuapp.com/notice/");
         setUser(result.data.reverse());
     };
     const deleteUser = async id => {
-        await axios.delete(`http://localhost:5000/notice/${id}`);
+        await axios.delete(`https://tutorial-website-backend.herokuapp.com/notice/${id}`);
         loadUsers();
     };
     //console.log(users);

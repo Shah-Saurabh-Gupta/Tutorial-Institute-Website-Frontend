@@ -21,7 +21,7 @@ const EditStudent = () => {
 
     useEffect(() => {
         const loadUser = async () => {
-            const result = await axios.get(`http://localhost:5000/user/editStudent/${id}`);
+            const result = await axios.get(`https://tutorial-website-backend.herokuapp.com/user/editStudent/${id}`);
             setUser(result.data);
         };
 
@@ -30,7 +30,7 @@ const EditStudent = () => {
 
     const onSubmit = async e => {
         e.preventDefault();
-        await axios.put(`http://localhost:5000/user/${id}`, user);
+        await axios.put(`https://tutorial-website-backend.herokuapp.com/user/${id}`, user);
         history.push("/admin");
     };
 

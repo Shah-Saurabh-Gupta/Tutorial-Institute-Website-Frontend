@@ -14,7 +14,7 @@ const ViewStudent = () => {
     useEffect(() => {
         
         const loadUser = async () => {
-            const res = await axios.get(`http://localhost:5000/user/editStudent/${id}`);
+            const res = await axios.get(`https://tutorial-website-backend.herokuapp.com/user/editStudent/${id}`);
             setUser(res.data);
         };
         loadUser();

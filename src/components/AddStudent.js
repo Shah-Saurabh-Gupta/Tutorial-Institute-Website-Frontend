@@ -21,7 +21,7 @@ const AddStudent = () => {
   const onSubmit = async e => {
     e.preventDefault();
     //console.log(user);
-    await axios.post("http://localhost:5000/user/registerStudent", user);
+    await axios.post("https://tutorial-website-backend.herokuapp.com/user/registerStudent", user);
     history.push("/admin");
   };
 
