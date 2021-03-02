@@ -4,7 +4,7 @@ function SingleNotice(props) {
 
     var d = new Date(`${props.createdAt}`);
     var date = d.getHours() + ":" + d.getMinutes() + ", " + d.toDateString();
-    console.log(date);
+   // console.log(date);
 
     return (
         <>

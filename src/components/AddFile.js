@@ -48,34 +48,34 @@ function AddFile() {
 
     return (
         <>
-            <div class="bg-white lg:w-4/12 md:6/12 w-10/12 m-auto my-10 shadow-md">
-                <div class="py-8 px-8 rounded-xl">
-                    <h1 class="font-medium text-2xl mt-3 text-center">File</h1>
+            <div className="bg-white lg:w-4/12 md:6/12 w-10/12 m-auto my-10 shadow-md">
+                <div className="py-8 px-8 rounded-xl">
+                    <h1 className="font-medium text-2xl mt-3 text-center">File</h1>
                     {message ? <p>{message}</p> : null}
-                    <form onSubmit={handleSubmit} class="mt-6">
-                        <div class="my-5 text-sm">
-                            <label htmlFor="filename" class="block text-black">Name of File</label>
-                            <input type="text" autofocus id="filename" name="filename" value={filename} onChange={(e) => setFileName(e.target.value)} class="rounded-sm px-4 py-3 mt-3 focus:outline-none bg-gray-100 w-full" placeholder="Name of File" />
+                    <form onSubmit={handleSubmit} className="mt-6">
+                        <div className="my-5 text-sm">
+                            <label htmlFor="filename" className="block text-black">Name of File</label>
+                            <input type="text" autofocus id="filename" name="filename" value={filename} onChange={(e) => setFileName(e.target.value)} className="rounded-sm px-4 py-3 mt-3 focus:outline-none bg-gray-100 w-full" placeholder="Name of File" />
                         </div>
-                        <div class="my-5 text-sm">
-                            <label htmlFor="batch" class="block text-black">Batch</label>
-                            <select name="batch" value={batch} onChange={e => setBatch(e.target.value)} class="rounded-sm px-4 py-3 mt-3 focus:outline-none bg-gray-100 w-full">
+                        <div className="my-5 text-sm">
+                            <label htmlFor="batch" className="block text-black">Batch</label>
+                            <select name="batch" value={batch} onChange={e => setBatch(e.target.value)} className="rounded-sm px-4 py-3 mt-3 focus:outline-none bg-gray-100 w-full">
                                 <option value="Free" >Free</option>
                                 <option value="Morning" >Morning</option>
                                 <option value="Noon" >Noon</option>
                                 <option value="Evening" >Evening</option>
                             </select>
-                            {/* <input type="text" id="batch" name="batch" value={batch} onChange={(e) => setBatch(e.target.value)} class="rounded-sm px-4 py-3 mt-3 focus:outline-none bg-gray-100 w-full" placeholder="Batch" /> */}                      </div>
-                        <div class="my-5 text-sm">
-                            <label htmlFor="fileInfo" class="block text-black">Info about File</label>
-                            <input type="text" autofocus id="fileInfo" name="fileInfo" value={fileInfo} onChange={(e) => setFileInfo(e.target.value)} class="rounded-sm px-4 py-3 mt-3 focus:outline-none bg-gray-100 w-full" placeholder="Info of File" />
+                            {/* <input type="text" id="batch" name="batch" value={batch} onChange={(e) => setBatch(e.target.value)} className="rounded-sm px-4 py-3 mt-3 focus:outline-none bg-gray-100 w-full" placeholder="Batch" /> */}                      </div>
+                        <div className="my-5 text-sm">
+                            <label htmlFor="fileInfo" className="block text-black">Info about File</label>
+                            <input type="text" autofocus id="fileInfo" name="fileInfo" value={fileInfo} onChange={(e) => setFileInfo(e.target.value)} className="rounded-sm px-4 py-3 mt-3 focus:outline-none bg-gray-100 w-full" placeholder="Info of File" />
                         </div>
-                        <div class="my-5 text-sm">
-                            <label htmlFor="file" class="block text-black">File</label>
-                            <input type="file" id="file" name="file" value={files} onChange={handleFileChange} class="rounded-sm px-4 py-3 mt-3 focus:outline-none bg-gray-100 w-full" placeholder="File" />
+                        <div className="my-5 text-sm">
+                            <label htmlFor="file" className="block text-black">File</label>
+                            <input type="file" id="file" name="file" value={files} onChange={handleFileChange} className="rounded-sm px-4 py-3 mt-3 focus:outline-none bg-gray-100 w-full" placeholder="File" />
                         </div>
 
-                        <button type="submit" class="block text-center text-white bg-blue-500 p-3 duration-300 rounded-sm hover:bg-blue-600 w-full">Upload</button>
+                        <button type="submit" className="block text-center text-white bg-blue-500 p-3 duration-300 rounded-sm hover:bg-blue-600 w-full">Upload</button>
                     </form>
                 </div>
             </div>
